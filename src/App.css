@@ -1,0 +1,135 @@
+.App {
+    position: relative;
+    z-index: 1;
+}
+
+.animated-heading {
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .image-container {
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-container:hover {
+    transform: skew(-10deg); 
+  }
+  
+  .skill-image {
+    max-width: 100%; 
+    max-height: 100%; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .image-container:hover .skill-image {
+    transform: skew(-10deg); 
+  }
+  .project-image {
+    width: 80%; 
+    height: auto;
+    margin: 10px;
+    box-sizing: border-box; 
+    transition: all 0.3s ease; 
+  }
+  
+  .project-image:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.05); 
+  }
+  
+  
+
+.form-control {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff; 
+  color: #ffffff;
+}
+
+
+.form-control:focus {
+  background: none;
+  box-shadow: none;
+}
+
+
+.bg-pink {
+  background-color: #ff69b4 !important; 
+  border-color: #ff69b4 !important; 
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+.icon-link {
+  color: #0A66C2;
+}
+.icon-twit {
+  color: #657786;
+}
+.icon-git {
+  color: #24292e;
+}
+.icon-size {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar {
+  text-decoration: none;
+ 
+}
+
+.btn-custom {
+  background: linear-gradient(to right, #ff6ec4, #7873f5, #71e7f2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+  animation: pulse 1s infinite alternate;
+}
+
+.btn-custom:focus {
+  background: linear-gradient(to right, #ff6ec4, #7873f5, #71e7f2);
+}
+
+@keyframes pulse {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.05);
+  }
+}
